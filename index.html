@@ -176,9 +176,7 @@ function create ()
     //messy fix
     this.physics.add.collider(player, layer1, function(){
         if(player.body.checkCollision.up && player.body.blocked.down){
-            player.body.touching.down = true;
-            console.log(player.body);
-            
+            player.body.touching.down = true;            
         }
     });
     
